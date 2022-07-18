@@ -1,7 +1,7 @@
 <template>
   <v-app>
     <v-app-bar dense app color="primary" dark>
-      <v-app-bar-title>QR code scanner</v-app-bar-title>
+      <v-app-bar-title>QR Code Scanner</v-app-bar-title>
 
       <v-spacer></v-spacer>
 
@@ -29,7 +29,7 @@
                   <td>{{ formData.name }}</td>
                 </tr>
                 <tr>
-                  <td>national ID</td>
+                  <td>National ID</td>
                   <td>{{ formData.national_id }}</td>
                 </tr>
                 <tr>
@@ -166,5 +166,9 @@ export default {
   100% {
     background-color: rgba(0, 0, 0, 0);
   }
+}
+
+.v-btn {
+  text-transform: unset;
 }
 </style>

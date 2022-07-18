@@ -241,3 +241,9 @@ export default {
   },
 }
 </script>
+
+<style scoped>
+.v-btn {
+  text-transform: unset;
+}
+</style>
