@@ -2,6 +2,10 @@
   <v-app>
     <v-app-bar dense app color="primary" dark>
       <v-app-bar-title>QR code scanner</v-app-bar-title>
+
+      <v-spacer></v-spacer>
+
+      <v-btn color="secondary" href="/">Generator</v-btn>
     </v-app-bar>
 
     <v-main>
