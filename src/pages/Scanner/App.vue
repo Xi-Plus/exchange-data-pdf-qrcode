@@ -91,7 +91,7 @@ export default {
 
   mounted() {
     this.soundBeep = new Howl({
-      src: ['/beep1.mp3'],
+      src: ['beep1.mp3'],
       html5: true,
       preload: true,
     })

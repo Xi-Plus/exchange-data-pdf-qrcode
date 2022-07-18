@@ -89,14 +89,14 @@ export default {
     async generatePdf() {
       this.loadingAnimate = true
 
-      const url = '/form.pdf'
+      const url = 'form.pdf'
       const existingPdfBytes = await fetch(url).then((res) => res.arrayBuffer())
 
       const pdfDoc = await PDFDocument.load(existingPdfBytes)
 
       pdfDoc.registerFontkit(fontkit)
 
-      const fontUrl = '/kaiu.ttf'
+      const fontUrl = 'kaiu.ttf'
       const fontBytes = await fetch(fontUrl).then((res) => res.arrayBuffer())
       const kaiuFont = await pdfDoc.embedFont(fontBytes, { subset: true })
 
