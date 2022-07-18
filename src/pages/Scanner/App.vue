@@ -5,7 +5,7 @@
 
       <v-spacer></v-spacer>
 
-      <v-btn color="secondary" href="/">Generator</v-btn>
+      <v-btn color="secondary" href="./">Generator</v-btn>
     </v-app-bar>
 
     <v-main>
