@@ -18,5 +18,8 @@ module.exports = {
       title: 'Scanner',
       chunks: ['chunk-vendors', 'chunk-common', 'scanner']
     }
+  },
+  devServer: {
+    open: true,
   }
 }
