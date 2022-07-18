@@ -30,8 +30,6 @@
 
           <v-text-field v-model="formData.phone" label="Phone" autocomplete="phone"></v-text-field>
 
-          {{ formData }}
-
           <v-btn color="primary" @click="generatePdf">Download PDF</v-btn>
         </v-form>
 
@@ -204,8 +202,8 @@ export default {
         const pngImage = await pdfDoc.embedPng(canvas.toDataURL('image/png'))
         // const pngDims = pngImage.scale(0.5)
         firstPage.drawImage(pngImage, {
-          x: 190,
-          y: 380,
+          x: 365,
+          y: 533,
           width: qrCodeSize,
           height: qrCodeSize,
         })
