@@ -135,26 +135,24 @@ export default {
         putText(text, pos[0], pos[1], pos[2], pos[3], helveticaFont)
       }
 
-      putZhText(this.formData.name, [190, 664])
-      putEnText(this.formData.national_id, [190, 642])
-      putEnText(this.formData.birthday, [190, 620])
+      putZhText(this.formData.name, [170, 664])
+      putEnText(this.formData.national_id, [170, 642])
+      putEnText(this.formData.birthday, [170, 620])
       if (this.formData.gender === 'M') {
-        putEnText('V', [187, 598])
+        putEnText('V', [167, 598])
       } else if (this.formData.gender === 'F') {
-        putEnText('V', [233, 598])
+        putEnText('V', [213, 598])
       }
-      putZhText(this.formData.address, [190, 576])
-      putEnText(this.formData.phone, [190, 554])
-      putEnText(new Date().toISOString().substr(0, 10), [190, 532])
+      putZhText(this.formData.address, [170, 576])
+      putEnText(this.formData.phone, [170, 554])
+      putEnText(new Date().toISOString().substr(0, 10), [170, 532])
 
       let compressedData = {}
       formKeys.forEach((key, idx) => {
-        console.log(idx, key, this.formData[key])
         if (this.formData[key]) {
           compressedData[idx2key(idx)] = this.formData[key]
         }
       })
-      console.log(compressedData)
 
       const codeWriter = new BrowserQRCodeSvgWriter()
 
