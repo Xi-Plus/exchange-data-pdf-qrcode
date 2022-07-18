@@ -13,7 +13,7 @@
         <div style="width: 350px" id="reader"></div>
 
         <div>
-          <span :class="{ blinktext: blinking }" style="font-size: 32px">已匯入：{{ prev_name }}</span>
+          <span :class="{ blinktext: blinking }" style="font-size: 32px">Scanned: {{ prev_name }}</span>
 
           <v-simple-table>
             <template v-slot:default>
@@ -57,11 +57,11 @@
         </div>
 
         <fieldset class="mt-5" style="padding: 20px">
-          <legend>控制項</legend>
+          <legend>Preference</legend>
 
           <div class="d-flex flex-row flex-wrap" style="align-items: center">
-            <v-switch class="mr-2" v-model="playSuccess" label="掃描成功音效"></v-switch>
-            <v-switch class="mr-2" v-model="blinkAnimate" label="成功匯入動畫"></v-switch>
+            <v-switch class="mr-2" v-model="playSuccess" label="Scanning sound"></v-switch>
+            <v-switch class="mr-2" v-model="blinkAnimate" label="Scanning animate"></v-switch>
           </div>
         </fieldset>
 
